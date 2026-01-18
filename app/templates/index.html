@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <!-- Premium Hero Section -->
+    <section class="hero is-info is-bold" style="background: linear-gradient(135deg, rgba(26, 26, 46, 0.95), rgba(15, 52, 96, 0.95)), url('https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="premium-shadow" style="display: inline-block; padding: 2rem; border-radius: 24px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); margin-bottom: 2rem;" data-aos="zoom-in" data-aos-delay="200">
+                    <figure class="image is-128x128 is-centered mb-4 floating">
+                        <img src="https://img.icons8.com/color/96/000000/sentiment-satisfied.png" alt="Sentiment Analysis Logo" style="filter: drop-shadow(0 8px 16px rgba(0,0,0,0.3));">
+                    </figure>
+                    <h1 class="title is-1 has-text-white fade-in-up" data-aos="fade-up" data-aos-delay="300">{{ _('Sentiment Analysis Platform') }}</h1>
+                    <h2 class="subtitle is-3 has-text-light fade-in-up" data-aos="fade-up" data-aos-delay="400">
+                        {{ _('Analyze emotions, understand feedback, and gain insights from text') }}
+                    </h2>
+                </div>
+                <div class="buttons is-centered" data-aos="fade-up" data-aos-delay="500">
+                    {% if not current_user.is_authenticated %}
+                    <a href="{{ url_for('auth.signup') }}" class="button is-large is-white is-outlined glass">
+                        <span class="icon">
+                            <i class="fas fa-rocket"></i>
+                        </span>
+                        <span>{{ _('Get Started') }}</span>
+                    </a>
+                    <a href="{{ url_for('auth.login') }}" class="button is-large is-light premium-shadow">
+                        <span class="icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </span>
+                        <span>{{ _('Login') }}</span>
+                    </a>
+                    {% else %}
+                    <a href="{{ url_for('main.sentiment') }}" class="button is-large is-white is-outlined glass">
+                        <span class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </span>
+                        <span>{{ _('Try Sentiment Analysis') }}</span>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="has-text-centered mb-6" data-aos="fade-up">
+                <h2 class="title is-2 gradient-text">{{ _('Features') }}</h2>
+                <p class="subtitle is-5 has-text-secondary">{{ _('Powerful tools for intelligent sentiment analysis') }}</p>
+            </div>
+            <div class="columns is-multiline">
+                <div class="column is-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card is-equal-height premium-shadow">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80" alt="Sentiment Analysis" loading="lazy">
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered">
+                            <figure class="image is-48x48 is-centered mb-3">
+                                <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/48/0066CC/external-sentiment-analysis-data-science-flaticons-flat-flat-icons.png" alt="Sentiment Analysis">
+                            </figure>
+                            <h3 class="title is-4 has-text-info">{{ _('Sentiment Analysis') }}</h3>
+                            <p class="has-text-secondary">{{ _('Analyze text to determine emotional tone - positive, negative, or neutral') }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card is-equal-height premium-shadow">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="File Upload" loading="lazy">
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered">
+                            <figure class="image is-48x48 is-centered mb-3">
+                                <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/48/0066CC/external-upload-cloud-storage-flaticons-flat-flat-icons.png" alt="File Upload">
+                            </figure>
+                            <h3 class="title is-4 has-text-info">{{ _('File Upload') }}</h3>
+                            <p class="has-text-secondary">{{ _('Upload documents for analysis and storage') }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card is-equal-height premium-shadow">
+                        <div class="card-image">
+                            <figure class="image is-16by9">
+                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Multilingual" loading="lazy">
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered">
+                            <figure class="image is-48x48 is-centered mb-3">
+                                <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/48/0066CC/external-multilingual-translation-flaticons-flat-flat-icons.png" alt="Multilingual">
+                            </figure>
+                            <h3 class="title is-4 has-text-info">{{ _('Multilingual Support') }}</h3>
+                            <p class="has-text-secondary">{{ _('Available in English and Spanish for global accessibility') }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium About Section -->
+    <section class="section is-medium has-background-light">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column is-6 slide-in-left" data-aos="fade-right">
+                    <div class="glass" style="padding: 2rem;">
+                        <h2 class="title is-2 has-text-info">{{ _('About Our Platform') }}</h2>
+                        <p class="subtitle is-5">{{ _('Harness the power of AI to understand emotions in text') }}</p>
+                        <p class="has-text-secondary">{{ _('Our sentiment analysis platform helps businesses, researchers, and individuals understand the emotional context behind written content. Whether you\'re analyzing customer feedback, social media posts, or any text data, our tools provide valuable insights into sentiment and emotional tone.') }}</p>
+                        <br>
+                        <div class="content">
+                            <ul>
+                                <li><strong class="has-text-primary">{{ _('Advanced AI') }}:</strong> {{ _('State-of-the-art machine learning') }}</li>
+                                <li><strong class="has-text-primary">{{ _('Real-time Processing') }}:</strong> {{ _('Instant sentiment analysis') }}</li>
+                                <li><strong class="has-text-primary">{{ _('Comprehensive Insights') }}:</strong> {{ _('Detailed emotional breakdown') }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-6 slide-in-right" data-aos="fade-left">
+                    <div class="premium-shadow" style="border-radius: 16px; overflow: hidden;">
+                        <figure class="image is-16by9">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1470&q=80" alt="Sentiment Analysis Visualization" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Production Section -->
+    <section class="section is-medium has-background-info">
+        <div class="container has-text-centered">
+            <h2 class="title is-2 has-text-white fade-in-up" data-aos="fade-up">{{ _('Coming Soon to Production') }}</h2>
+            <p class="subtitle is-4 has-text-light fade-in-up" data-aos="fade-up" data-aos-delay="100">{{ _('We\'re preparing for our official production launch with enhanced features and improved performance') }}</p>
+            <div class="columns is-multiline mt-6">
+                <div class="column is-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="box has-background-white">
+                        <figure class="image is-16by9 mb-4">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Cloud Deployment" loading="lazy">
+                        </figure>
+                        <span class="icon is-large has-text-info">
+                            <i class="fas fa-cloud fa-2x"></i>
+                        </span>
+                        <h4 class="title is-5 has-text-info">{{ _('Cloud Deployment') }}</h4>
+                        <p class="has-text-secondary">{{ _('Scalable cloud infrastructure for reliable performance') }}</p>
+                    </div>
+                </div>
+                <div class="column is-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="box has-background-white">
+                        <figure class="image is-16by9 mb-4">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Enhanced Database" loading="lazy">
+                        </figure>
+                        <span class="icon is-large has-text-info">
+                            <i class="fas fa-database fa-2x"></i>
+                        </span>
+                        <h4 class="title is-5 has-text-info">{{ _('Enhanced Database') }}</h4>
+                        <p class="has-text-secondary">{{ _('Persistent storage with advanced analytics capabilities') }}</p>
+                    </div>
+                </div>
+                <div class="column is-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="box has-background-white">
+                        <figure class="image is-16by9 mb-4">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Advanced Analytics" loading="lazy">
+                        </figure>
+                        <span class="icon is-large has-text-info">
+                            <i class="fas fa-chart-bar fa-2x"></i>
+                        </span>
+                        <h4 class="title is-5 has-text-info">{{ _('Advanced Analytics') }}</h4>
+                        <p class="has-text-secondary">{{ _('Detailed insights and trend analysis tools') }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<style>
+.card.is-equal-height {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card-content {
+    flex: 1;
+}
+
+/* Enhanced card styling */
+.card-image img {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    transition: var(--transition);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* Premium content styling */
+.content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    border-radius: 8px;
+}
+
+.content li:hover {
+    padding-left: 0.5rem;
+    background: rgba(102, 126, 234, 0.05);
+    border-bottom-color: var(--accent);
+}
+
+.content li:last-child {
+    border-bottom: none;
+}
+
+/* Premium hero enhancements */
+.hero .premium-shadow {
+    animation: float-glow 4s ease-in-out infinite;
+}
+
+@keyframes float-glow {
+    0%, 100% { 
+        transform: translateY(0px); 
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    }
+    50% { 
+        transform: translateY(-10px); 
+        box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+    }
+}
+
+/* Interactive elements */
+.interactive-card {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.interactive-card:hover {
+    transform: translateY(-12px) scale(1.02);
+}
+
+/* Premium typography */
+.premium-text {
+    background: linear-gradient(135deg, #667eea, #764ba2, #667eea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: premium-gradient 3s ease infinite;
+}
+
+@keyframes premium-gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+</style>
+{% endblock %}

@@ -1,0 +1,6 @@
+ID,Complaint,Polarity,Sentiment
+1,The Wi-Fi in the hostel is terrible and never works!,-1.0,Negative
+2,The library is very peaceful and a good place to study.,0.51,Positive
+3,Canteen food quality has become poor lately.,-0.35,Negative
+4,Professors are very helpful and supportive.,0.35,Positive
+5,The air conditioning in classrooms is not working properly.,0.0,Neutral

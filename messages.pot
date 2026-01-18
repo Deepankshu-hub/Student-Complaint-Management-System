@@ -1,0 +1,122 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-01-14 11:55+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app/templates/base.html:7
+msgid "Flask Auth Example"
+msgstr ""
+
+#: app/templates/base.html:22
+msgid "Home"
+msgstr ""
+
+#: app/templates/base.html:29
+msgid "Profile"
+msgstr ""
+
+#: app/templates/base.html:35 app/templates/upload.html:31
+msgid "Upload"
+msgstr ""
+
+#: app/templates/base.html:41 app/templates/sentiment.html:5
+msgid "Sentiment Analysis"
+msgstr ""
+
+#: app/templates/base.html:49 app/templates/login.html:5
+#: app/templates/login.html:32
+msgid "Login"
+msgstr ""
+
+#: app/templates/base.html:55 app/templates/signup.html:5
+#: app/templates/signup.html:33
+msgid "Sign Up"
+msgstr ""
+
+#: app/templates/base.html:63
+msgid "Logout"
+msgstr ""
+
+#: app/templates/index.html:4
+msgid "Welcome to the High-End Website"
+msgstr ""
+
+#: app/templates/index.html:6
+msgid "This is the home page."
+msgstr ""
+
+#: app/templates/login.html:17
+msgid "Your Email"
+msgstr ""
+
+#: app/templates/login.html:23
+msgid "Your Password"
+msgstr ""
+
+#: app/templates/login.html:29
+msgid "Remember me"
+msgstr ""
+
+#: app/templates/profile.html:5
+#, python-format
+msgid "Welcome, %(name)s!"
+msgstr ""
+
+#: app/templates/sentiment.html:17
+msgid "Enter text for sentiment analysis..."
+msgstr ""
+
+#: app/templates/sentiment.html:21
+msgid "Analyze"
+msgstr ""
+
+#: app/templates/sentiment.html:27
+msgid "Analysis Results"
+msgstr ""
+
+#: app/templates/sentiment.html:28
+msgid "Text:"
+msgstr ""
+
+#: app/templates/sentiment.html:29
+msgid "Polarity Score:"
+msgstr ""
+
+#: app/templates/sentiment.html:30
+msgid "Sentiment:"
+msgstr ""
+
+#: app/templates/signup.html:17
+msgid "Email"
+msgstr ""
+
+#: app/templates/signup.html:23
+msgid "Name"
+msgstr ""
+
+#: app/templates/signup.html:29
+msgid "Password"
+msgstr ""
+
+#: app/templates/upload.html:5
+msgid "Upload File"
+msgstr ""
+
+#: app/templates/upload.html:24
+msgid "Choose a file…"
+msgstr ""
+

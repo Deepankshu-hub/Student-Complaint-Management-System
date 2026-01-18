@@ -1,0 +1,228 @@
+# Spanish translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-01-14 11:55+0530\n"
+"PO-Revision-Date: 2026-01-14 11:50+0530\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: app/templates/base.html:7
+msgid "Flask Auth Example"
+msgstr "Ejemplo de autenticación de Flask"
+
+#: app/templates/base.html:22
+msgid "Home"
+msgstr "Inicio"
+
+#: app/templates/base.html:29
+msgid "Profile"
+msgstr "Perfil"
+
+#: app/templates/base.html:35 app/templates/upload.html:31
+msgid "Upload"
+msgstr "Subir"
+
+#: app/templates/base.html:41 app/templates/sentiment.html:5
+msgid "Sentiment Analysis Platform"
+msgstr "Plataforma de Análisis de Sentimiento"
+
+msgid "Analyze emotions, understand feedback, and gain insights from text"
+msgstr "Analiza emociones, comprende comentarios y obtén insights del texto"
+
+msgid "Get Started"
+msgstr "Comenzar"
+
+msgid "Try Sentiment Analysis"
+msgstr "Probar Análisis de Sentimiento"
+
+msgid "Features"
+msgstr "Características"
+
+msgid "Analyze text to determine emotional tone - positive, negative, or neutral"
+msgstr "Analiza texto para determinar el tono emocional - positivo, negativo o neutral"
+
+msgid "Upload documents for analysis and storage"
+msgstr "Sube documentos para análisis y almacenamiento"
+
+msgid "Available in English and Spanish for global accessibility"
+msgstr "Disponible en inglés y español para accesibilidad global"
+
+msgid "About Our Platform"
+msgstr "Acerca de Nuestra Plataforma"
+
+msgid "Harness the power of AI to understand emotions in text"
+msgstr "Aprovecha el poder de la IA para entender emociones en el texto"
+
+msgid "Our sentiment analysis platform helps businesses, researchers, and individuals understand the emotional context behind written content. Whether you're analyzing customer feedback, social media posts, or any text data, our tools provide valuable insights into the sentiment and emotional tone."
+msgstr "Nuestra plataforma de análisis de sentimiento ayuda a empresas, investigadores e individuos a comprender el contexto emocional detrás del contenido escrito. Ya sea analizando comentarios de clientes, publicaciones en redes sociales o cualquier dato de texto, nuestras herramientas proporcionan valiosos insights sobre el sentimiento y tono emocional."
+
+msgid "Perfect for market research, customer service improvement, content analysis, and emotional intelligence applications."
+msgstr "Perfecto para investigación de mercado, mejora del servicio al cliente, análisis de contenido y aplicaciones de inteligencia emocional."
+
+msgid "Coming Soon to Production"
+msgstr "Próximamente en Producción"
+
+msgid "We're preparing for our official production launch with enhanced features and improved performance"
+msgstr "Nos estamos preparando para nuestro lanzamiento oficial en producción con características mejoradas y rendimiento mejorado"
+
+msgid "Cloud Deployment"
+msgstr "Despliegue en la Nube"
+
+msgid "Scalable cloud infrastructure for reliable performance"
+msgstr "Infraestructura en la nube escalable para rendimiento confiable"
+
+msgid "Enhanced Database"
+msgstr "Base de Datos Mejorada"
+
+msgid "Persistent storage with advanced analytics capabilities"
+msgstr "Almacenamiento persistente con capacidades avanzadas de análisis"
+
+msgid "Advanced Analytics"
+msgstr "Análisis Avanzado"
+
+msgid "Detailed insights and trend analysis tools"
+msgstr "Herramientas de insights detallados y análisis de tendencias"
+
+msgid "Powerful Analytics Dashboard"
+msgstr "Panel de Análisis Potente"
+
+msgid "Real-Time Insights"
+msgstr "Insights en Tiempo Real"
+
+msgid "Monitor sentiment trends, track emotional patterns, and gain actionable insights from your data with our comprehensive analytics dashboard."
+msgstr "Monitorea tendencias de sentimiento, rastrea patrones emocionales y obtén insights accionables de tus datos con nuestro panel de análisis integral."
+
+msgid "Visual Analytics"
+msgstr "Análisis Visual"
+
+msgid "Interactive charts and graphs"
+msgstr "Gráficos y tablas interactivas"
+
+msgid "Trend Analysis"
+msgstr "Análisis de Tendencias"
+
+msgid "Track sentiment over time"
+msgstr "Rastrea el sentimiento a lo largo del tiempo"
+
+msgid "Export Reports"
+msgstr "Exportar Reportes"
+
+msgid "Advanced AI Technology"
+msgstr "Tecnología de IA Avanzada"
+
+msgid "Leverage cutting-edge machine learning algorithms and natural language processing to deliver accurate sentiment analysis with industry-leading precision."
+msgstr "Aprovecha algoritmos de aprendizaje automático de vanguardia y procesamiento de lenguaje natural para ofrecer análisis de sentimiento preciso con precisión líder en la industria."
+
+msgid "Machine Learning"
+msgstr "Aprendizaje Automático"
+
+msgid "State-of-the-art algorithms"
+msgstr "Algoritmos de última generación"
+
+msgid "NLP Processing"
+msgstr "Procesamiento NLP"
+
+msgid "Natural language understanding"
+msgstr "Comprensión de lenguaje natural"
+
+msgid "Real-time Analysis"
+msgstr "Análisis en Tiempo Real"
+
+msgid "Instant sentiment detection"
+msgstr "Detección instantánea de sentimiento"
+
+#: app/templates/base.html:49 app/templates/login.html:5
+#: app/templates/login.html:32
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: app/templates/base.html:55 app/templates/signup.html:5
+#: app/templates/signup.html:33
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: app/templates/base.html:63
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: app/templates/index.html:4
+msgid "Welcome to the High-End Website"
+msgstr "Bienvenido al sitio web de alta gama"
+
+#: app/templates/index.html:6
+msgid "This is the home page."
+msgstr "Esta es la página de inicio."
+
+#: app/templates/login.html:17
+msgid "Your Email"
+msgstr "Tu correo electrónico"
+
+#: app/templates/login.html:23
+msgid "Your Password"
+msgstr "Tu contraseña"
+
+#: app/templates/login.html:29
+msgid "Remember me"
+msgstr "Recuérdame"
+
+#: app/templates/profile.html:5
+#, python-format
+msgid "Welcome, %(name)s!"
+msgstr "¡Bienvenido, %(name)s!"
+
+#: app/templates/sentiment.html:17
+msgid "Enter text for sentiment analysis..."
+msgstr "Introduce texto para el análisis de sentimiento..."
+
+#: app/templates/sentiment.html:21
+msgid "Analyze"
+msgstr "Analizar"
+
+#: app/templates/sentiment.html:27
+msgid "Analysis Results"
+msgstr "Resultados del análisis"
+
+#: app/templates/sentiment.html:28
+msgid "Text:"
+msgstr "Texto:"
+
+#: app/templates/sentiment.html:29
+msgid "Polarity Score:"
+msgstr "Puntuación de polaridad:"
+
+#: app/templates/sentiment.html:30
+msgid "Sentiment:"
+msgstr "Sentimiento:"
+
+#: app/templates/signup.html:17
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: app/templates/signup.html:23
+msgid "Name"
+msgstr "Nombre"
+
+#: app/templates/signup.html:29
+msgid "Password"
+msgstr "Contraseña"
+
+#: app/templates/upload.html:5
+msgid "Upload File"
+msgstr "Subir Archivo"
+
+#: app/templates/upload.html:24
+msgid "Choose a file…"
+msgstr "Elige un archivo…"
+

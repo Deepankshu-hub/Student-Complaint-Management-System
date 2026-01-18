@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Complaint Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Complaint Management System</h1>
+    <p>Please enter your complaint below:</p>
+
+    <form id="complaintForm">
+      <textarea id="complaint" placeholder="Type your complaint here..." rows="6" required></textarea>
+      <button type="submit">Submit Complaint</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    const form = document.getElementById('complaintForm');
+    const resultDiv = document.getElementById('result');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const complaint = document.getElementById('complaint').value.trim();
+      if (!complaint) return;
+
+      resultDiv.innerHTML = `<p>Complaint submitted successfully!</p>
+                             <p><strong>Text:</strong> ${complaint}</p>`;
+      form.reset();
+    });
+  </script>
+</body>
+</html>
