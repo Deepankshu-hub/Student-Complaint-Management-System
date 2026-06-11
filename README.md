@@ -1,5 +1,9 @@
 # Sentiment Analysis Platform: A Comprehensive Research Project
 
+[🚀 View Live Deployment on Vercel](https://student-complaint-management-system.vercel.app/)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FDeepankshu-hub%2FStudent-Complaint-Management-System)
+
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Research Objectives](#research-objectives)
