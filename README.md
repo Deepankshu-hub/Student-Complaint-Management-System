@@ -965,12 +965,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Unsplash for providing high-quality images
 - The open-source community for various libraries and tools
 
-## Contact
-
-For questions, collaborations, or issues, please contact:
-- Email: your.email@example.com
-- GitHub: https://github.com/yourusername/sentiment-analysis-platform
-- LinkedIn: https://linkedin.com/in/yourprofile
 
 ---
 
